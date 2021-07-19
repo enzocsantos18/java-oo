@@ -22,4 +22,14 @@ public class Conta {
         return true;
     }
 
+    public boolean transfere(double valor, Conta destino){
+        if (this.saldo < valor){
+            return false;
+        }
+
+        this.saldo -= valor;
+        destino.deposita(valor);
+
+        return true;
+    }
 }
