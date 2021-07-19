@@ -14,22 +14,22 @@ public class Conta {
     }
 
     public boolean saca(double valor){
-        if (this.saldo < valor){
-            return false;
-        }
+        if (verificaSaldo(valor)) return false;
 
         this.saldo -= valor;
         return true;
     }
 
     public boolean transfere(double valor, Conta destino){
-        if (this.saldo < valor){
-            return false;
-        }
+        if (verificaSaldo(valor)) return false;
 
         this.saldo -= valor;
         destino.deposita(valor);
 
         return true;
+    }
+
+    private boolean verificaSaldo(double valor) {
+        return this.saldo < valor;
     }
 }
