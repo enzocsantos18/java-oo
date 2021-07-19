@@ -16,4 +16,16 @@ public class Cliente {
     public String getProfissao() {
         return profissao;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setProfissao(String profissao) {
+        this.profissao = profissao;
+    }
 }

@@ -23,6 +23,18 @@ public class Conta {
         return titular;
     }
 
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
     public double deposita(double valor){
         this.saldo += valor;
 
