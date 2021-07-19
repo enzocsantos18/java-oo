@@ -1,11 +1,12 @@
 package br.com.java.oo;
 
+import br.com.java.oo.model.Cliente;
 import br.com.java.oo.model.Conta;
 
 public class CriaConta {
 
     public static void main(String[] args) {
-        Conta primeiraConta = new Conta();
+        Conta primeiraConta = new Conta(1234, 1234, new Cliente());
         primeiraConta.deposita(200);
 
         System.out.println(primeiraConta.getSaldo());
