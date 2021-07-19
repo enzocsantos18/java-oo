@@ -2,10 +2,26 @@ package br.com.java.oo.model;
 
 public class Conta {
 
-    public double saldo;
-    public int agencia;
-    public int numero;
-    public Cliente titular;
+    private double saldo;
+    private int agencia;
+    private int numero;
+    private Cliente titular;
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
 
     public double deposita(double valor){
         this.saldo += valor;

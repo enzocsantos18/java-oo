@@ -1,7 +1,19 @@
 package br.com.java.oo.model;
 
 public class Cliente {
-    public String nome;
-    public String cpf;
-    public String profissao;
+    private String nome;
+    private String cpf;
+    private String profissao;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public String getProfissao() {
+        return profissao;
+    }
 }

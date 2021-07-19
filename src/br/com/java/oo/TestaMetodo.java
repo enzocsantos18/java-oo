@@ -11,7 +11,7 @@ public class TestaMetodo {
 
         boolean saca = conta.saca(150);
         if (saca){
-            System.out.println("O saldo atual é de: " + conta.saldo);
+            System.out.println("O saldo atual é de: " + conta.getSaldo());
         }else {
             System.out.println("Não foi possível sacar");
         }
@@ -26,8 +26,8 @@ public class TestaMetodo {
         }
 
 
-        System.out.println("Saldo da conta 1: " + conta.saldo);
-        System.out.println("Saldo da conta 2: " + conta2.saldo);
+        System.out.println("Saldo da conta 1: " + conta.getSaldo());
+        System.out.println("Saldo da conta 2: " + conta2.getSaldo());
 
     }
 }
